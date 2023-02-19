@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=Edge'>
+<link href='static/css/mapbox.css' rel='stylesheet' />
+<link rel='stylesheet' href='static/css/font-awesome.min.css'>
+<link rel='stylesheet' href='static/css/mplus.css'>
+<title>GeoJSON在线编辑 - StrErr.com</title>
+<link href='static/css/leaflet.draw.css' rel='stylesheet' />
+<link href='static/css/codemirror.css' rel='stylesheet' />
+<link href='static/css/base.css' rel='stylesheet' />
+<link href='static/css/marker.css' rel='stylesheet' />
+<link href='static/css/github_browse.css' rel='stylesheet' />
+<link href='static/css/site.css' rel='stylesheet' />
+<link href='static/css/theme.css' rel='stylesheet' />
+<link rel="icon" href="../icon/infinite_arrow_favicon_5.ico">
+<meta name='author' content='MapBox' />
+<meta name='description' content='simply edit geojson map data' />
+<meta property='og:site_name' content='geojson.io' />
+<meta name='viewport' content='initial-scale=1,maximum-scale=1'>
+<!--[if lt IE 9]>
+    <script type='text/javascript' src='static/js/aight.min.js'></script>
+  <![endif]-->
+<script src='static/js/mapbox.js'></script>
+<script src='static/js/raven.min.js'></script>
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "GeoJSON Editer",
+      "applicationCategory": "WebApplication",
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "CNY",
+        "price": "0.0"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.7",
+        "ratingCount": "2380"
+      }
+    }
+  </script>
+<meta http-equiv="Content-Security-Policy" content="
+    default-src
+      'self'
+      ;
+    child-src
+      'self'
+      blob:
+      ;
+    connect-src
+      'self'
+      *
+      ;
+    font-src
+      *
+      ;
+    frame-src
+      *
+      ;
+    img-src
+      'self'
+      data:
+      *
+      ;
+    script-src
+      'self'
+      'unsafe-eval'
+      'unsafe-inline'
+      https://cdn.segment.com
+      https://assets.customer.io
+      https://secure.gaug.es
+      https://www.google-analytics.com
+      https://*.googlesyndication.com
+      https://*.g.doubleclick.net
+      *
+      ;
+    style-src
+      'self'
+      'unsafe-inline'
+      *
+      ;
+  ">
+<script>
+  if (/a\.tiles\.mapbox\.com/.test(L.mapbox.config.HTTP_URL)) {
+    Raven.config('https://c2d096c944dd4150ab7e44b0881b4a46@app.getsentry.com/11480', {
+      whitelistUrls: [/geojson\.io/],
+      ignoreErrors: [
+          'Uncaught Error: Error connecting to extension ckibcdccnfeookdmbahgiakhnjcddpki',
+          'Uncaught Error: Error connecting to extension pioclpoplcdbaefihamjohnefbikjilc'
+      ]
+    }).install();
+  }
+  </script>
+<style>
+  /*
+   * http://seclab.stanford.edu/websec/framebusting/framebust.pdf
+   */
+  body { display: none; }
+  </style>
+</head>
+<body>
+<div id="geojsonio-body">
+<div class='geojsonio'></div>
+</div>
+<script>
+if (self == top) {
+  document.getElementsByTagName ("body")[0].style.display = 'block';
+} else {
+  top.location = self.location;
+}
+</script>
+<script src='static/js/delegate.js'></script>
+<script src='static/js/lib.js'></script>
+<script src='static/js/lan.js'></script>
+<script src='static/js/site.js'></script>
+<script type='text/javascript'>
+if (/a\.tiles\.mapbox\.com/.test(L.mapbox.config.HTTP_URL)) {
+  var _gauges = _gauges || [];
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-101953225-1', 'auto');
+  ga('send', 'pageview');
+}
+</script>
+<script src="static/js/adsbygoogle.js" async="true"></script>
+<script>(adsbygoogle = window.adsbygoogle || []).push({            google_ad_client: "ca-pub-9844306222441756",            enable_page_level_ads: true});</script>
+</body>
+</html>
