@@ -3,6 +3,8 @@ genarate GeoJson or TopoJSON
 
 genarate GeoJson or TopoJSON，制作GeoJSON和TopoJSON绘制地图投影
 
+copyed from: [strerr.com](https://www.strerr.com/geojson/geojson.html)
+
 I don't have the source code, and I don't know where the source code comes from. I just cloned a site.
 
 I found it: [geojson.io](geojson.io)
